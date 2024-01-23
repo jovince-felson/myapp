@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Heading from "./Heading";
+import Activiti from "./Files/activiti";
+import Activitys from "./Files/Activitys";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-black p-[70px]">
+      <div className="bg-white p-5px rounded-lg py-10 px-16">
+        <Heading />
+
+        <div className="flex gap-2 flex-wrap mt-5">
+          <Activiti head="Trichy" num="23" bgColor="#8272DA"></Activiti>
+          <Activiti head="December" num="14:03:34" bgColor="#FD6663"></Activiti>
+          <Activiti head="React" num="Build Using" bgColor="#FCA201"></Activiti>
+          <Activitys/>
+        
+        </div>
+       
+      </div>
     </div>
   );
 }
-
 export default App;
